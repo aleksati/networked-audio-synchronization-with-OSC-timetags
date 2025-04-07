@@ -9,7 +9,7 @@ serverIp = '127.0.0.1'
 serverPort = 8000
 audio = "./tick.wav"
 
-# OSC handler for incoming /tick OSC messages
+# handler for incoming /tick OSC messages
 def pyHandler(address, args):
     print(f'{address} {args}')
     
