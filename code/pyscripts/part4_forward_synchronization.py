@@ -9,7 +9,7 @@ BPM = 100  # Beats per minute
 BEAT_INTERVAL = 60 / BPM
 
 # seconds into the future to schedule ticks
-FORWARD_OFFSET = 4  
+FORWARD_OFFSET = 4 
 
 # Define two OSC clients
 # Remote client (Pure Data)

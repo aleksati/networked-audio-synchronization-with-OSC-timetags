@@ -6,12 +6,6 @@ In class, we will explore four examples of increasing complexity that demonstrat
 
 **NB!** This workshop requires an intermediate familiarity with OSC for Python and Pure Data.
 
-## Preperation
-
-Schmeder, & Freed, A. (2008). Implementation and applications of open sound control timestamps. ICMC. http://cnmat.berkeley.edu/publications/implementation-and-applications-open-sound-control-timestamps
-
-Andrew Schmeder. (2010). Best Practices for Open Sound Control. Center for New Music and Audio Technologies (CNMAT), UC Berkeley. https://opensoundcontrol.stanford.edu/files/osc-best-practices-final.pdf
-
 ## Dependencies
 
 - [ Python 3x](https://www.python.org/downloads/)
@@ -25,7 +19,14 @@ Andrew Schmeder. (2010). Best Practices for Open Sound Control. Center for New M
   - I recommend that you install the 32-bit version of Pure Data vanilla (if possible) for mrpeach to work best.
   - Download the [mrpeach](https://github.com/pd-externals/mrpeach) library
 
-## Resources
+## Preperation
+
+Schmeder, & Freed, A. (2008). Implementation and applications of open sound control timestamps. ICMC. http://cnmat.berkeley.edu/publications/implementation-and-applications-open-sound-control-timestamps
+
+Andrew Schmeder. (2010). Best Practices for Open Sound Control. Center for New Music and Audio Technologies (CNMAT), UC Berkeley. https://opensoundcontrol.stanford.edu/files/osc-best-practices-final.pdf
+
+
+## Additional Resources
 
 - [Python Speech recognition with OSC network communication (dispatchers, threading server, clients, etc.)](https://www.youtube.com/watch?v=T3jd-894Ar4)
 - [OSC Official Homepage](https://opensoundcontrol.stanford.edu/index.html)

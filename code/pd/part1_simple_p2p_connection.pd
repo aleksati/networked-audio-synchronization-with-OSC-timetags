@@ -1,4 +1,4 @@
-#N canvas 946 193 814 407 12;
+#N canvas 218 200 814 353 12;
 #X msg 146 181 [;
 #X msg 37 180 ];
 #X text 36 160 close bundle;
@@ -9,7 +9,7 @@
 #X text 252 273 connect to python server;
 #X obj 79 246 loadbang;
 #X text 141 160 open a bundle;
-#X text 83 28 send message to python;
+#X text 193 27 send message to python;
 #X obj 431 89 mrpeach/unpackOSC;
 #X obj 37 216 mrpeach/packOSC;
 #X text 427 28 receive OSC messages on port;
@@ -20,7 +20,7 @@
 #X msg 81 271 connect 127.0.0.1 8000;
 #X obj 431 123 mrpeach/routeOSC /tick;
 #X obj 37 71 list prepend /tick;
-#X msg 37 27 tick;
+#X msg 37 27 Hello from PD client;
 #X connect 0 0 12 0;
 #X connect 1 0 12 0;
 #X connect 3 0 1 0;
