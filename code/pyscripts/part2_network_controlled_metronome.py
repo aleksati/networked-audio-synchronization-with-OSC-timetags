@@ -1,4 +1,4 @@
-# Network Controlled Metronome
+# Part 2 - Network-Controlled Metronome client
 from pythonosc import udp_client
 from pythonosc import osc_bundle_builder, osc_message_builder
 import time

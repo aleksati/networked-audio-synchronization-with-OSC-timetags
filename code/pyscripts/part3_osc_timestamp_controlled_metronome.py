@@ -1,4 +1,4 @@
-# Realtime Sync With OSC Timestamps
+# Part 3 - OSC Timestamp Controlled Metronome
 from pythonosc import udp_client
 from pythonosc import osc_bundle_builder, osc_message_builder
 import time
@@ -38,6 +38,9 @@ def sendMsg(client):
 
         # Send the bundle
         client.send(bundle.build())
+
+        # increment the beat number for every loop
+        beat_number += 1
 
         # Wait for the next beat
         time.sleep(BEAT_INTERVAL)

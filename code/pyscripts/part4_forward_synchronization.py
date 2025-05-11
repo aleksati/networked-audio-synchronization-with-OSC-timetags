@@ -23,7 +23,7 @@ client2Port = 8000
 client2 = udp_client.UDPClient(client2Ip, client2Port)
 
 # Message sending logic
-def sendMsg(client):
+def sendMsg(clients):
     print(f'Sending messages to client.')
     
     start_time = time.time()
@@ -44,7 +44,8 @@ def sendMsg(client):
         bundle.add_content(msg.build())
 
         # Send the bundle
-        client.send(bundle.build())
+        clients[0].send(bundle.build())
+        clients[1].send(bundle.build())
 
         # increment the beat number for every loop
         beat_number += 1
@@ -55,12 +56,10 @@ def sendMsg(client):
 
 if __name__ == "__main__":
     # Start sending messages to two identical clients (local and remote), but in individual threads
-    t_client1 = threading.Thread(target=sendMsg, args=(client1,), daemon=True)
-    t_client2 = threading.Thread(target=sendMsg, args=(client2,), daemon=True)
+    t_clients = threading.Thread(target=sendMsg, args=([client1, client2],), daemon=True)
 
     # start sending
-    t_client1.start()
-    t_client2.start()
+    t_clients.start()
 
     print("Press Ctrl+C to exit.")
 
